@@ -6,7 +6,6 @@ A multi-agent AI system for comprehensive travel planning built with Anthropic C
 
 This AI Travel Planner uses multiple specialized AI agents to create personalized travel plans. Each agent focuses on a specific aspect of trip planning, collaborating to provide a comprehensive travel experience tailored to your preferences.
 
-![Travel Planner Screenshot](https://i.imgur.com/tJh0Gjk.png)
 
 ## Features
 
@@ -120,9 +119,6 @@ You can also run this project in Google Colab:
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Acknowledgments
 
