@@ -1,127 +1,58 @@
-# AI Travel Planner
+# 🌍 AI Travel Planner
 
-A multi-agent AI system for comprehensive travel planning built with Anthropic Claude and Gradio.
+A multi-agent system for personalized, end-to-end travel planning powered by **Anthropic Claude** and a **Gradio web interface**.
 
-## Overview
+---
 
-This AI Travel Planner uses multiple specialized AI agents to create personalized travel plans. Each agent focuses on a specific aspect of trip planning, collaborating to provide a comprehensive travel experience tailored to your preferences.
+## 🧠 Overview
 
+This AI Travel Planner leverages **specialized AI agents**, each responsible for a distinct part of trip planning. Together, they deliver a comprehensive travel plan tailored to your preferences and constraints.
 
-## Features
+---
 
-- **Itinerary Generator**: Creates day-by-day travel plans customized to your preferences
-- **Transportation Specialist**: Suggests optimal ways to reach your destination
-- **Accommodation Finder**: Recommends places to stay based on your requirements
-- **Local Information Expert**: Provides essential details about your destination
-- **Budget Analyzer**: Optimizes your travel budget and offers money-saving tips
+## ✨ Key Features
 
-## How It Works
+- **🗓️ Itinerary Generator** — Day-by-day travel schedule based on interests and trip duration  
+- **🚆 Transportation Specialist** — Recommends optimal travel options to/from destination  
+- **🏨 Accommodation Finder** — Suggests hotels or stays based on your budget and needs  
+- **📍 Local Information Expert** — Provides cultural tips, weather, safety, and events  
+- **💸 Budget Analyzer** — Helps optimize spending with smart, cost-saving strategies  
 
-The system utilizes a multi-agent architecture where each agent is powered by Anthropic's Claude AI:
+---
 
-1. **Input Collection**: Users provide basic travel details (departure location, destination, travel dates, etc.)
-2. **Agent Orchestration**: Each specialized agent processes the information sequentially
-3. **Comprehensive Output**: The system generates detailed travel recommendations across multiple categories
+## ⚙️ How It Works
 
-## Installation
+1. **📝 Input Collection**  
+   - Users provide basic details (origin, destination, dates, preferences)
 
-### Prerequisites
+2. **🧩 Agent Orchestration**  
+   - Claude-powered agents process your input sequentially for each travel aspect
+
+3. **📤 Comprehensive Output**  
+   - Returns a full travel plan covering itinerary, logistics, budgeting, and local info
+
+---
+
+## 🛠️ Installation
+
+### 🔧 Prerequisites
+
 - Python 3.8+
-- An Anthropic API key
+- Anthropic API key
 
-### Setup
+### 📦 Setup
 
-1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/ai-travel-planner.git
-cd ai-travel-planner
-```
+# Clone the repo
+git clone https://github.com/Vishwajeet0830/TravelMultiModalAgent.git
+cd TravelMultiModalAgent
 
-2. Create a virtual environment:
-```bash
+# Create and activate virtual environment
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
 
-3. Install dependencies:
-```bash
+# Install dependencies
 pip install anthropic gradio streamlit pydantic
-```
 
-4. Set up your API key:
-```bash
-# Create a .env file with your API key
+# Store your API key
 echo "ANTHROPIC_API_KEY=your_api_key_here" > .env
-```
-
-## Usage
-
-### Local Deployment
-
-Run the application with Gradio:
-
-```bash
-python gradio_app.py
-```
-
-This will launch a web interface where you can:
-1. Enter your travel details (origin, destination, dates, etc.)
-2. Click "Plan My Trip" to generate your personalized travel plan
-3. View the results organized in tabs (Itinerary, Transportation, Accommodation, Local Info, Budget)
-
-### Google Colab Deployment
-
-You can also run this project in Google Colab:
-
-1. Upload the `travel_planner.py` and `gradio_app.py` files to your Colab environment
-2. Store your Anthropic API key in Colab's secrets manager
-3. Run the application with:
-```python
-!python gradio_app.py "$ANTHROPIC_API_KEY"
-```
-
-## Project Structure
-
-- `travel_planner.py`: Contains the multi-agent implementation with specialized travel planning functions
-- `gradio_app.py`: Implements the web interface using Gradio
-
-## Agent Descriptions
-
-1. **Itinerary Planner Agent**
-   - Creates a detailed day-by-day itinerary
-   - Considers trip duration, traveler preferences, and budget
-
-2. **Transportation Agent**
-   - Suggests optimal transportation options
-   - Provides cost estimates, travel times, and pros/cons
-
-3. **Accommodation Agent**
-   - Recommends lodging options at different price points
-   - Includes location benefits and amenities
-
-4. **Local Information Agent**
-   - Provides weather forecasts, cultural tips, and safety information
-   - Highlights special events and local transportation options
-
-5. **Budget Analysis Agent**
-   - Optimizes budget allocation across different categories
-   - Offers destination-specific money-saving tips
-
-## Future Enhancements
-
-- **Real-time Data Integration**: Incorporate live flight and hotel pricing
-- **Interactive Itinerary Editing**: Allow users to modify and refine generated plans
-- **Map Visualization**: Add visual mapping of recommended activities
-- **Travel Booking**: Add direct booking capabilities for flights and accommodations
-- **User Accounts**: Save and manage multiple trip plans
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-
-## Acknowledgments
-
-- Anthropic for the Claude API
-- Gradio team for the web interface library
-- All contributors to this project
