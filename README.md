@@ -1,4 +1,4 @@
-# 🌍 AI Travel Planner
+# 🌍 AI Travel Planner:
 
 A multi-agent system for personalized, end-to-end travel planning powered by **Anthropic Claude** and a **Gradio web interface**.
 
